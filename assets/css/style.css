@@ -1,0 +1,44 @@
+body {
+    background: blue;
+    margin: 0;
+}
+
+
+nav {
+    background: #f7f7f7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: top sticky;
+}
+
+h1 {
+    width: auto
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    width: 60%;
+    padding: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+li {
+    text-decoration: none;  
+    width: auto;
+    padding: 0 20px 5px 10px;
+}
+
+.container {
+    background: white;
+}
+
+.rbd-logo {
+    width: 18%;
+    height: auto;
+    /* padding: 3px 0px 0px 10px;
+    position: top 0; */
+}
