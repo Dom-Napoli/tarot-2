@@ -1,6 +1,9 @@
 body {
-    background: blue;
+    background:whitesmoke;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -9,17 +12,26 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: top sticky;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    font-family: Segoe UI;
 }
 
 h1 {
-    width: auto
+    width: auto;
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 2em;
 }
 
 ul {
     display: inline-flex;
     list-style: none;
     width: 60%;
+    margin: 0;
     padding: 0;
     align-items: flex-end;
     justify-content: flex-end;
@@ -30,15 +42,65 @@ li {
     text-decoration: none;  
     width: auto;
     padding: 0 20px 5px 10px;
+    font-size: 1em;
+    font-weight: 600;
 }
 
-.container {
-    background: white;
-}
-
-.rbd-logo {
-    width: 18%;
+.page-container {
+    width:80%;
     height: auto;
-    /* padding: 3px 0px 0px 10px;
-    position: top 0; */
+    display: flex;
+    justify-content: space-around;   
+    margin: 0 auto;
+    background:white;
 }
+
+.card-container {
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 8px 20px 8px;
+}
+
+.pic-div-img {
+    width: 100%;
+    height: auto;
+}
+
+.text-div {
+    overflow: auto;
+    height: 300px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 8px 20px 8px;
+}
+
+::-webkit-scrollbar {
+    width: auto;
+    background: black;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+    bottom: 0;
+}
+
+.logo-img {
+    width: 10%;
+    height: auto;
+}
+
+
