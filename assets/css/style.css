@@ -6,7 +6,7 @@ body {
     align-items: center;
 }
 
-
+/* navigation start | h1 & ul/li */
 nav {
     background: #f7f7f7;
     width: 100%;
@@ -50,6 +50,7 @@ li {
     font-weight: 600;
 }
 
+/* home parent container div */
 .page-container {
     width: 75%;
     height: auto;
@@ -59,6 +60,7 @@ li {
     background:white;
 }
 
+/* card container parent div | two children divs | .pic-div (image) & text-div (card text) */ 
 .card-container {
     width: 45%;
     height: auto;
@@ -96,6 +98,7 @@ li {
     padding: 5px 0px;
 }
 
+/* scroll bar for <p> text-div */
 ::-webkit-scrollbar {
     width: 3px;
     background: #450396;
@@ -103,7 +106,7 @@ li {
 
 .text-div p {
     font-family: Arial Narrow;
-    font-size: .50em;
+    font-size: .70em;
     font-weight: 600;
     color: #000;
     text-align: justify;
@@ -131,6 +134,7 @@ li {
     padding: 10px 8px;
 }
 
+/* footer div | ul/li & image (.logo-img) */
 footer {
     display: flex;
     flex-direction: row;
@@ -152,13 +156,13 @@ footer {
 
 .footer-li {
     width: auto;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: 600;
     padding: 2px;
 }
 
 .logo-img {
-    width: 9%;
+    width: 11%;
     height: auto;
     padding: 10px;
 }
