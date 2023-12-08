@@ -18,36 +18,40 @@ nav {
     top: 0;
     margin: 0;
     font-family: Segoe UI;
+    color: #450396;
 }
 
 h1 {
     width: auto;
     margin: 0;
-    padding: 15px 10px;
+    padding: 10px;
     font-size: 2em;
+    font-weight: 600;
 }
 
 ul {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     list-style: none;
     width: 60%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     align-items: flex-end;
     justify-content: flex-end;
     margin: 0;
 }
 
 li {
+
     text-decoration: none;  
     width: auto;
-    padding: 0 20px 5px 10px;
+    padding: 0 10px;
     font-size: 1em;
     font-weight: 600;
 }
 
 .page-container {
-    width:80%;
+    width: 75%;
     height: auto;
     display: flex;
     justify-content: space-around;   
@@ -56,8 +60,9 @@ li {
 }
 
 .card-container {
-    width: 35%;
+    width: 45%;
     height: auto;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,39 +73,96 @@ li {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 20px 8px 20px 8px;
+    align-items: center;
+    margin: 3px;
+    padding: 5px 0px;
 }
 
 .pic-div-img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 
 .text-div {
     overflow: auto;
-    height: 300px;
+    height: 200px;
     width: 100%; 
     display: flex;
     flex-direction: column;
-    margin: 20px 8px 20px 8px;
+    align-items: center;
+    margin: 3px;
+    border: 1px solid #450396;
+    padding: 5px 0px;
 }
 
 ::-webkit-scrollbar {
-    width: auto;
-    background: black;
+    width: 3px;
+    background: #450396;
+}
+
+.text-div p {
+    font-family: Arial Narrow;
+    font-size: .50em;
+    font-weight: 600;
+    color: #000;
+    text-align: justify;
+    word-wrap: break-word;
+    text-indent: 20px;
+    padding: 16px 11px;
+    margin: 0 auto;
+}
+
+.text-div .copyright {
+    font-size: 8px;
+    text-indent: none;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px 8px;
+}
+
+.text-div .horoscope {
+    font-size: 11px;
+    color: #450396;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 8px;
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: auto;
     background: whitesmoke;
     bottom: 0;
+    font-family: Segoe UI;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.footer-li {
+    width: auto;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 2px;
 }
 
 .logo-img {
-    width: 10%;
+    width: 9%;
     height: auto;
+    padding: 10px;
 }
+
+
 
 
