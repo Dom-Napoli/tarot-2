@@ -93,8 +93,8 @@ function loadCards(array) {
         // console.log(cardcontainer);
 
         //append card container to main page parent - page container
-        // container.append(cardcontainer);
-        // console.log(container);
+        container.append(cardcontainer);
+        console.log(container);
         }
     }
 

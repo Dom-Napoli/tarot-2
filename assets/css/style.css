@@ -51,23 +51,27 @@ li {
 }
 
 /* home parent container div */
-.page-container {
-    width: 75%;
+/* .page-container {
+    width: 90%;
     height: auto;
     display: flex;
     justify-content: space-around;   
     margin: 0 auto;
     background:white;
-}
+    border: 3px solid black;
+} */
 
 /* card container parent div | two children divs | .pic-div (image) & text-div (card text) */ 
 .card-container {
-    width: 45%;
+    width: 60%;
     height: auto;
     margin: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .pic-div {
