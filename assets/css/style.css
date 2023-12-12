@@ -1,5 +1,6 @@
 body {
-    background:whitesmoke;
+    /* background:whitesmoke; */
+    background: white;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -51,27 +52,28 @@ li {
 }
 
 /* home parent container div */
-/* .page-container {
-    width: 90%;
+.container {
+    width: 95%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;   
     margin: 0 auto;
-    background:white;
-    border: 3px solid black;
-} */
+    background: white;
+}
 
 /* card container parent div | two children divs | .pic-div (image) & text-div (card text) */ 
 .card-container {
-    width: 60%;
+    width: 30%;
     height: auto;
-    margin: 5px;
+    margin: 20px auto 10px auto; 
+    background: #f7f7f7;
     display: flex;
-    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 
 .pic-div {
@@ -81,78 +83,96 @@ li {
     flex-direction: column;
     align-items: center;
     margin: 3px;
-    padding: 5px 0px;
+    padding: 5px 0px;   
 }
 
 .pic-div-img {
-    width: 90%;
+    width: 75%;
     height: auto;
     box-shadow: 2px 6px 7px 4px #8f8f8f;
 }
 
+/*added with JavaScript*/
 .picbutton {
-    /* background: white;
+    background: white;
     font-family: arial;
     color: #000;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: .55em;
+    font-weight: 700;
     text-decoration: none;
-    border: 2px solid #450396;
-    margin: 30px auto; 
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    border-radius: 20px;
-    padding: 2px;
-    box-shadow: 2px 3px 4px 2px #8f8f8f; */
+    text-align: center;
+    border: 1px solid #450396;
+    margin: 20px auto 10px auto;
+    width: 25%;
+    border-radius: 15px;
+    padding: 3px;
+    box-shadow: 2px 3px 4px 2px #8f8f8f;
 }
 
 .text-div {
     overflow: auto;
     height: 200px;
-    width: 100%; 
+    width: 80%; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3px;
-    border: 1px solid #450396;
+    margin: 0 0 10px 0;
+    border: 1px solid #8f8f8f;
     padding: 5px 0px;
+    background: white;
 }
 
 /* scroll bar for <p> text-div */
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 2px;
     background: #450396;
+}
+
+/*added with JavaScript*/
+.text-div .rev-title {
+    font-size: .65em;
+    color: #450396;
+    font-family: Arial;
+    text-align: center;
+    font-weight: 700;
+    padding: 0;
+    margin: auto;
+    text-indent: 0;
 }
 
 .text-div p {
     font-family: Arial Narrow;
     font-size: .70em;
-    font-weight: 600;
+    font-weight: 800;
     color: #000;
     text-align: justify;
     word-wrap: break-word;
     text-indent: 20px;
-    padding: 16px 11px;
-    margin: 0 auto;
+    padding: 16px 3px;
+    margin: auto;
 }
 
 .text-div .copyright {
-    font-size: 8px;
+    font-size: .40em;
     text-indent: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     padding: 5px 8px;
+    margin: auto;
+    text-indent: 0;
 }
 
 .text-div .horoscope {
-    font-size: 11px;
+    font-size: .50em;
     color: #450396;
     font-family: Arial;
     text-align: center;
-    font-weight: bold;
-    padding: 10px 8px;
+    word-wrap: break-word;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 0;
+    text-indent: 0;
 }
 
 /* footer div | ul/li & image (.logo-img) */
@@ -177,13 +197,13 @@ footer {
 
 .footer-li {
     width: auto;
-    font-size: 0.7em;
+    font-size: .80em;
     font-weight: 600;
     padding: 2px;
 }
 
 .logo-img {
-    width: 11%;
+    width: 15%;
     height: auto;
     padding: 10px;
 }

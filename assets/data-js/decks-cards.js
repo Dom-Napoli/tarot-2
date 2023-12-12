@@ -1,11 +1,11 @@
-let decks = [
+const decks = [
     {id: 1, name: "Rider Waite Tarot"},
     {id: 2, name: "Wandering Spirit"},
     {id: 3, name: "CBD Tarot De Marseille"}
 ]
 
 
-let cards = [
+const cards = [
     {id: 1, name: "The Fool", suit: "Arcana"},
     {id: 2, name: "The Magician", suit: "Arcana"},
     {id: 3, name: "The High Priestess", suit: "Arcana"},

@@ -1,6 +1,6 @@
 //VAR - class= .card-container | container
-let container = document.querySelector(".card-container");
-console.log(container);
+let container = document.querySelector(".container");
+// console.log(container);
 
 //invocation for function
 loadCards(cardObjects);
@@ -21,14 +21,9 @@ function loadCards(array) {
             // console.log(cards[i].copyright);
             // console.log(cards[i].horoscope);
 
-        // let container = document.createElement("div");
-        //     container.setAttribute("class", "page-container");
-        //     console.log(container); 
-
         let cardcontainer = document.createElement("div");
             // console.log(cardcontainer);
             cardcontainer.setAttribute("class", "card-container");
-            cardcontainer.style.background = "white";
 
         let picdiv = document.createElement("div");    
             picdiv.setAttribute("class", "pic-div");
@@ -41,7 +36,7 @@ function loadCards(array) {
         
         let imgbutton = document.createElement("a");
             imgbutton.setAttribute("class", "picbutton");
-            imgbutton.setAttribute("href", `./index.html?card=${cards[i].id}`);
+            imgbutton.setAttribute("href", `./card.html?card=${cards[i].id}`);
             imgbutton.textContent = "card page";
             // console.log(imgbutton);     
 
@@ -61,6 +56,12 @@ function loadCards(array) {
             up.innerHTML = cards[i].upright;
             // console.log(up);   
 
+        let revtitle = document.createElement("p");
+            revtitle.setAttribute("class", "rev-title");
+            revtitle.setAttribute("p", `./index.html?card=${cards[i].id}`);
+            revtitle.textContent = "Card Reversed:";
+            // console.log(revtitle);
+
         let rev = document.createElement("p");
             rev.setAttribute("class", "reverse");
             rev.textContent = cards[i].reverse;
@@ -71,11 +72,13 @@ function loadCards(array) {
             copy.setAttribute("class", "copyright");
             copy.textContent = cards[i].copyright;
             copy.innerHTML = cards[i].copyright;
+            copy.style.fontWeight = "900";
             // console.log(copy);
         
         let hors = document.createElement("p");
             hors.setAttribute("class", "horoscope");
             hors.textContent = cards[i].horoscope;
+            hors.innerHTML = cards[i].horoscope;
             // console.log(hors);
 
         //append elements to picdiv & textdiv    
@@ -83,6 +86,7 @@ function loadCards(array) {
         picdiv.append(imgbutton);
         // textdiv.append(wtmean);
         textdiv.append(up);
+        textdiv.append(revtitle);
         textdiv.append(rev);
         textdiv.append(copy);
         textdiv.append(hors);
@@ -92,13 +96,19 @@ function loadCards(array) {
         cardcontainer.append(textdiv);
         // console.log(cardcontainer);
 
-        //append card container to main page parent - page container
+        //append card-container to container
         container.append(cardcontainer);
-        console.log(container);
+        // console.log(container);
         }
     }
 
+    let allcards = document.querySelectorAll(".card-container");
+        //console.log to confirm NodeList of all 78 cards.
+        // console.log(allcards);
+        // console.log(allcards[0]);
 }
+
+
 
 
 
