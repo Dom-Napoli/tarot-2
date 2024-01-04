@@ -38,7 +38,7 @@ function loadCards(array) {
             imgbutton.setAttribute("class", "picbutton");
             imgbutton.setAttribute("href", `./card.html?card=${cards[i].id}`);
             imgbutton.textContent = "card page";
-            // console.log(imgbutton);     
+            //console.log(imgbutton);     
 
         let textdiv = document.createElement("div");
             textdiv.setAttribute("class", "text-div");

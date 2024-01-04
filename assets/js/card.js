@@ -11,7 +11,7 @@ const cardId = parseInt(urlParams.get("card"));
 //code "provide/query all cardIds"
 
 //console.log to confirm card-objects.js location - "all-123 objects accessed"
-console.log(cardObjects);
+// console.log(cardObjects);
 
 //assign cardObjects.js [array] to card
 let cardObjData;
@@ -24,13 +24,13 @@ for (let i = 0; i < cardObjects.length; i++) {
     }
 }
 //confirm card objects assigned to card
-console.log(cardObjData);
+// console.log(cardObjData);
 
 //loop decks-cards.js [array] "deck name" assign to deck_id
 let selectedDeck;
-for(let i = 0; i < decks.length; i ++){
+for(let i = 0; i < decks.length; i++){
     console.log(decks[i]);
-    if(decks[i].id === cardObjData.deck_id){
+    if(decks[i].id === cardObjData.card_id){
         selectedDeck = decks[i];
     }
 }
@@ -41,7 +41,7 @@ console.log(selectedDeck);
 let selectedCard;
 for(let i = 0; i < cards.length; i++){
     // console.log(cards[i]);
-    if(cards[i].id === cardObjdata.card_id){
+    if(cards[i].id === cardObjData.card_id){
         selectedCard = cards[i];
     }
 }
@@ -157,7 +157,7 @@ for(let i = 0; i < matchCardId.length; i++){
     //create alink to view each individual card in card.html
     let cardLink = document.createElement("a");
     console.log("Link to alternative card: ", cardLink);
-    cardLink.setAttribute("href", `./card.html?card=${matchCardId[i]}` )
+    cardLink.setAttribute("href", `./card.html?card=${matchCardId[i].id}` )
     cardLink.textContent = "View"
 
     //append to cardDiv
