@@ -30,7 +30,7 @@ for (let i = 0; i < cardObjects.length; i++) {
 let selectedDeck;
 for(let i = 0; i < decks.length; i++){
     console.log(decks[i]);
-    if(decks[i].id === cardObjData.card_id){
+    if(decks[i].id === cardObjData.deck_id){
         selectedDeck = decks[i];
     }
 }
@@ -79,7 +79,7 @@ for(let i = 0; i < cardObjects.length; i++){
 //confirm all objects assigned to card-id.
 console.log("matchCardId: ", matchCardId);
 //confirm all objects assigned to card name and suit.
-console.log("cardObjData and selectedCard: ", cardObjData, selectedCard);
+console.log("cardObjData, selectedCard: ", cardObjData, selectedCard);
 
 //add elements to card page with console log to confirm
 let cardHeader = document.querySelector(".card-name");

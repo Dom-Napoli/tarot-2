@@ -1,19 +1,20 @@
 h3 {
     font-family: Trebuchet MS;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 600;
     color: #450396;
     text-align: center;
-    margin: 0;
-    padding-bottom: 5px;
+    margin: 10px 0px;
+    /* padding-bottom: 10px; */
 }
 
 h4 {
     font-family: Arial Narrow;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 700;
     color: #000; 
     margin: 0;
+    padding-bottom: 10px;
 }
 
 .c-card-suit {
@@ -23,16 +24,16 @@ h4 {
 .pic-side {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background: #e3dfe7;
+    background: #f7f7f7;
     padding: 5px 0 20px 0; 
     margin: 10px 20px 10px 20px;
-    box-shadow: 0 3px 5px 0 #450396;
-    border: 0.7px whitesmoke solid;
+    box-shadow: 2px 3px 4px 2px #8f8f8f;
 }
 
 .pic-side img {
-    width: 25%;
+    width: 40%;
     height: auto;
     border: 0.3px whitesmoke solid;
     box-shadow: 2px 3px 4px 2px #8f8f8f;
@@ -40,34 +41,48 @@ h4 {
 
 div .c-text-side {
     margin: 10px 20px 10px 20px;
-    border: 2px solid #450396;
+    border: 1px solid #450396;
     background: #fbfbfb;
     width: 100%;
 }
 
 p {
     font-family: Arial Narrow;
-    font-size: 13px;
+    font-size: 16px;
     text-align: justify;
     word-wrap: break-word;
+    text-indent: 20px;
     padding: 5px 20px 5px 20px;
     margin: 0 auto;
 }
+
+p.c-cardrev {
+    font-size: 1em;
+    color: #450396;
+    font-family: Trebuchet MS;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 0px;
+    margin: auto;
+    text-indent: 0;
+}
+
 
 p.c-copyright {
     font-size: 8px;
     font-weight: 900;
     color: #000;
     text-align: center;
+    padding: 5px 20px 10px 20px;
 }
 
 .card-container-2 {
     display: flex;
     flex-direction: column;
-    background: #e3dfe7;
-    margin: 10px 20px 10px 20px;
+    background: #f7f7f7;
+    margin: 10px 20px 20px 20px;
     padding-bottom: 20px;
-    box-shadow: 0 3px 5px 0 #450396;
+    box-shadow: 2px 3px 4px 2px #8f8f8f;
     border: 0.7px whitesmoke solid;
     width: 100%;
 }
@@ -79,12 +94,12 @@ p.c-copyright {
 
 .alt-cards-h2 {
     font-family: Trebuchet MS;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 600;
     color: #450396;
     display: inline;
     text-align: center;
-    padding: none;
+    margin-top: 10px;
     padding-bottom: 5px;
 }
 
@@ -94,12 +109,12 @@ p.c-copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e3dfe7;
+    background: #f7f7f7;
     margin: auto;
 }
 
 .associated-cards div img {
-    width: 50%;
+    width: 40%;
     height: auto;
     border-radius: 15px;
     border: 0.3px whitesmoke solid;
