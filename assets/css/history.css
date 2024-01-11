@@ -1,0 +1,123 @@
+.history-container {
+    width: 91%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    margin: 0;
+    background: white;
+}
+
+h3 {
+    font-family: Trebuchet MS;
+    font-size: 1em;
+    font-weight: 600;
+    color: #450396;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-family: Arial Narrow;
+    font-size: 15px;
+    font-weight: 800;
+    color: #000; 
+    margin: 0;
+}
+
+.source-h4 {
+    font-family: Arial Narrow;
+    font-size: 9px;
+    font-weight: 700;
+    color: #000; 
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+.photos-div {
+    width: 100%;
+    height: auto;
+    margin: 0; 
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 2px 6px 7px 4px #8f8f8f;
+    /* padding-bottom: 30px; */
+}
+
+
+.portrait {
+    width: 65%;
+    height: auto;
+    border-radius: 15px;
+    border: 0.3px whitesmoke solid;
+    box-shadow: 2px 6px 7px 4px #8f8f8f;
+}
+
+div {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    /* border: 2px solid #450396; */
+    /* margin: 10px 20px 10px 20px; */
+    /* padding: 30px 0 20px 0;  */
+}
+
+.aew-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 5px 0 10px 0;
+    /* margin: 10px 20px 10px 20px; */
+    border: none;
+    /* box-shadow: 0 3px 5px 0 #450396; */
+}
+
+.pcs-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 20px 0 20px 0;
+    /* margin: 10px 20px 10px 20px; */
+    /* border: none;
+    box-shadow: 0 3px 5px 0 #450396;     */
+} 
+
+div.history-div {
+    margin: 20px 0;
+    border: 1px solid #450396;
+    background: #fbfbfb;
+    padding: 10px 0px 10px 0px; 
+}
+
+p {
+    font-family: Arial Narrow;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.copy-ref {
+    font-size: 9px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    width: auto;
+    padding: 0 20px 0px 0px;
+    font-family: Segoe UI;
+    font-size: .75em;
+    font-weight: 600;
+}
