@@ -23,7 +23,6 @@ nav {
 }
 
 h1 {
-    width: auto;
     margin: 0;
     padding: 10px;
     font-size: 2em;
@@ -35,8 +34,7 @@ ul {
     flex-direction: row;
     list-style: none;
     width: 60%;
-    margin: 0;
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     align-items: flex-end;
     justify-content: flex-end;
     margin: 0;
@@ -45,19 +43,19 @@ ul {
 li a {
     text-decoration: none;  
     width: auto;
-    padding: 0 10px;
-    font-size: 1em;
+    padding: 0 20px 0px 0px;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
 /* home parent container div */
 .container {
-    width: 95%;
+    width: 91%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;   
-    margin: 0 auto;
+    margin: 0;
     background: white;
 }
 
@@ -65,7 +63,7 @@ li a {
 .card-container {
     width: 30%;
     height: auto;
-    margin: 20px auto 10px auto; 
+    margin: 10px auto 10px auto; 
     background: #f7f7f7;
     display: flex;
     align-items: center;
@@ -89,6 +87,7 @@ li a {
     width: 75%;
     height: auto;
     box-shadow: 2px 6px 7px 4px #8f8f8f;
+    border-radius: 15px;
 }
 
 /*added with JavaScript*/
@@ -207,6 +206,18 @@ footer {
     padding: 10px;
 }
 
+.search {
+    width: 67%; 
+    text-align: center;   
+}
 
-
-
+.search input {
+    width: 67%;
+    font-size: .75em;
+    font-weight: 700;
+    font-family: Arial;
+    background: #f7f7f7;
+    padding: 5px;
+    margin: 10px 0px 5px 0px;
+    border: solid 1px #8f8f8f;
+} 

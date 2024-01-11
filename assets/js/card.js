@@ -150,7 +150,7 @@ for(let i = 0; i < matchCardId.length; i++){
 
     //create header for image
     let cardHeader = document.createElement("h3");
-    cardHeader.textContent = selectedCard.name + " - " + deck.name;
+    cardHeader.textContent = selectedCard.name + ": " + deck.name;
     //confirm cardHeader H3
     console.log(cardHeader);
 

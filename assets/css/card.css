@@ -10,7 +10,7 @@ h3 {
 
 h4 {
     font-family: Arial Narrow;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 700;
     color: #000; 
     margin: 0;
@@ -36,6 +36,7 @@ h4 {
     width: 40%;
     height: auto;
     border: 0.3px whitesmoke solid;
+    border-radius: 15px;
     box-shadow: 2px 3px 4px 2px #8f8f8f;
 }
 
@@ -114,7 +115,7 @@ p.c-copyright {
 }
 
 .associated-cards div img {
-    width: 40%;
+    width: 60%;
     height: auto;
     border-radius: 15px;
     border: 0.3px whitesmoke solid;
@@ -123,7 +124,7 @@ p.c-copyright {
 
 .associated-cards div h3 {
     font-family: Arial Narrow;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     color: #000;
     padding: 20px;

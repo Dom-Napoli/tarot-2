@@ -2,7 +2,7 @@
 let container = document.querySelector(".container");
 // console.log(container);
 
-//invocation for function
+// //invocation for function
 loadCards(cardObjects);
 
 //function to access Array for object-elements per card
@@ -32,6 +32,7 @@ function loadCards(array) {
         let image = document.createElement("img");
             image.setAttribute("class", "pic-div-img");
             image.setAttribute("src", cards[i].image);
+            // image.style.opacity = "0.7";
             // console.log(image);
         
         let imgbutton = document.createElement("a");
@@ -103,13 +104,54 @@ function loadCards(array) {
     }
 
     let allcards = document.querySelectorAll(".card-container");
-        //console.log to confirm NodeList of all 78 cards.
+        // console.log to confirm NodeList of all 78 cards.
         // console.log(allcards);
         // console.log(allcards[0]);
 }
 
+function cardFilter(filterText) {
+    //alert - activates an onscreen pop-up.
+    console.log("Activated cardFilter() " + filterText);
+    //confirm all cards from decks-cards.js array accessed.
+    // console.log(cards);
 
+    //using METHOD "filter" to produce a new array. The new array will contain cards (decks-cards.js) with the card name - includes filterText. Logic removes need to code loops.
+    let filteredCards = cards.filter((c, i) => {
+        if (c.name.toLowerCase().includes(filterText.toLowerCase())) {
+            console.log(c.id);
+            return c;
+            //filteredCards.push(c);
+        }
+    })
+    //console log confirms that text entered in search bar returns all of the cards contains the letters typed by user. (i.e. king = 4 cards returned in array. "King of cups, swords, pentacles, wands").
+    console.log(filteredCards);
+    //filters cardObjects Array by using id assigned to card in decks-cards.js Array.
+    filteredCards = filteredCards.map(obj => obj.id);
+    //results access cards and all their objects, per text entered in search
+    console.log(".map filteredCards ", filteredCards);
 
+    let cardstoRender = [];
+    //VAR to iterate over cardObjData
+    for(let i = 0; i < cardObjects.length; i++) {
+    //determines if decks-cards.js/card.id is included in cardObjects.js/card_id
+    if(filteredCards.includes(cardObjects[i].card_id)) {
+
+        cardstoRender.push(cardObjects[i]);
+    }
+    }
+    console.log(cardstoRender);
+
+    document.querySelector(".container").innerHTML = ``;
+
+    //or create a loop for the same effect of removing cards that do not match.
+
+    //let cardElements = document.querySelectorAll(".card-container");
+    //for(let i=0; i<cardElements.length; i++){
+        //cardElements[i].remove();
+    //}
+
+    loadCards(cardstoRender);
+}
 
 
 
